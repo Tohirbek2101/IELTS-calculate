@@ -19,9 +19,23 @@ namespace IELTS_calculate
             this.Reading = reading;
             this.Writing = writing;
             this.Speaking = speaking;
+
             double overall = (Listening + Reading + Writing + Speaking)/4.0;
-            result = Math.Round(overall * 2) / 2;
-            return result;
+            int result=(int)Math.Truncate(overall);
+            if (overall - result >= 0.25 && overall - result < 0.75)
+            {
+                return result + 0.5;
+            }
+            else if (overall - result >= 0.75)
+            {
+                return result + 1.0;
+            }
+            else
+            {
+                return result;
+            }
+
+
         }
 
     }
