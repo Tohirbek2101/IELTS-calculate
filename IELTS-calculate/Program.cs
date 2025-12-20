@@ -27,10 +27,10 @@ namespace IELTS_calculate
                 double speaking = Convert.ToDouble(Console.ReadLine());
                 
                 Process process = new Process();
-                
-                process.CalculateOveral(listening, reading, writing, speaking);
-               
-                Console.WriteLine($"\nSizning IELTS bo‘yicha umumiy balingiz: {process.result}");
+
+                double overallResult = process.CalculateOveral(listening, reading, writing, speaking);
+
+                Console.WriteLine($"\nSizning IELTS bo‘yicha umumiy balingiz: {overallResult}");
                 Console.WriteLine("Dasturdan foydalanilganingiz uchun rahmat!");
                 
                 Console.WriteLine("1. Dasturni davom ettirish");
