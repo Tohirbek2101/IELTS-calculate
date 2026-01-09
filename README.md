@@ -1,4 +1,5 @@
 # IELTS Calculator
+![IELTS Calculator Demo](IeltsCalculate.gif)
 
 **IELTS Calculator** — bu konsol dastur bo‘lib, foydalanuvchining IELTS imtihonidagi to‘rtta modul ballari (Listening, Reading, Writing, Speaking) asosida **Overall Band Score** ni hisoblab beradi.
 
